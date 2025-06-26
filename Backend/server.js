@@ -17,7 +17,7 @@ const app = express();
 // ✅ CORS setup for both dev and prod
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://hrms.shivaurica.com',
+  'https://hrms-three-rho.vercel.app',
 ];
 
 app.use(cors({
