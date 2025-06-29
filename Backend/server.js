@@ -11,6 +11,7 @@ const payrollRoutes = require('./routes/payrollRoutes');
 const leaveRoutes = require('./routes/leaveRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes')
 const attendanceRoutes = require('./routes/attendanceRoutes')
+const holidayRoutes = require('./routes/holidayRoutes');
 
 const app = express();
 
@@ -48,6 +49,7 @@ app.use('/api/payroll', payrollRoutes);
 app.use('/api/leave', leaveRoutes);
 app.use('/api/dashboard', dashboardRoutes); 
 app.use('/api/attendance', attendanceRoutes);
+app.use('/api/holidays', holidayRoutes);
 
 // ✅ Start server
 const PORT = process.env.PORT || 5000;

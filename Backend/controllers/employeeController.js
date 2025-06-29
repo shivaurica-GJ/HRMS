@@ -7,7 +7,7 @@ const moment = require('moment-timezone');
 exports.clockIn = async (req, res) => {
   try {
     const indiaTime = moment().tz('Asia/Kolkata');
-    const isLate = indiaTime.hour() > 10 || (indiaTime.hour() === 10 && indiaTime.minute() > 20);
+    const isLate = indiaTime.hour() > 10 || (indiaTime.hour() === 10 && indiaTime.minute() > 15);
 
     const start = new Date().setHours(0, 0, 0, 0);
     const end = new Date().setHours(23, 59, 59, 999);
