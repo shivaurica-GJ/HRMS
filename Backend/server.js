@@ -18,7 +18,6 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'https://hrms-three-rho.vercel.app',
-  '*',
 ];
 
 app.use(cors({
