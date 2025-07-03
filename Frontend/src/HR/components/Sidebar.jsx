@@ -5,12 +5,14 @@ const navItems = [
   { name: 'Dashboard', icon: Home, link: '/hr/dashboard' },
   { name: 'Employee', icon: Users, link: '/hr/employee', matchPrefix: '/hr/employee' },
   { name: 'Attendance', icon: CalendarDays, link: '/hr/attendance' },
+  { name: 'Calendar', icon: CalendarDays, link: '/hr/calendar' },
   { name: 'Leave', icon: FileText, link: '/hr/leave' },
   { name: 'Reports', icon: BarChart2, link: '/hr/reports' , matchPrefix: '/hr/reports' },
   { name: 'Profile', icon: User, link: '/hr/profile' },
   // Remove the link from Logout, will handle logout on click
   { name: 'Logout', icon: LogOut }
 ];
+
 
 export default function Sidebar({ sidebarOpen, closeSidebar }) {
   const location = useLocation();

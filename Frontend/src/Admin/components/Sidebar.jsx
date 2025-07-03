@@ -13,12 +13,14 @@ const navItems = [
   { name: 'Dashboard', icon: Home, link: '/admin/dashboard' },
   { name: 'Employee', icon: Users, link: '/admin/employee', matchPrefix: '/admin/employee' },
   { name: 'Attendance', icon: CalendarDays, link: '/admin/attendance' },
+  { name: 'Calendar', icon: CalendarDays, link: '/admin/calendar' },
   { name: 'Leave', icon: FileText, link: '/admin/leave' },
   { name: 'Payroll', icon: FileText, link: '/admin/payroll' },
   { name: 'Reports', icon: BarChart2, link: '/admin/reports', matchPrefix: '/admin/reports' },
   { name: 'Profile', icon: User, link: '/admin/profile' },
   { name: 'Logout', icon: LogOut, link: '/logout' }, // This will be handled separately
 ];
+
 
 export default function Sidebar({ sidebarOpen, closeSidebar }) {
   const location = useLocation();

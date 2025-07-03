@@ -2,13 +2,15 @@ import {
   Home,
   BarChart2,
   User,
-  LogOut
+  LogOut,
+  CalendarDays
 } from 'lucide-react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 const navItems = [
   { name: 'Dashboard', icon: Home, link: '/employee/dashboard' },
+  { name: 'Calendar', icon: CalendarDays, link: '/employee/calendar' },
   { name: 'Reports', icon: BarChart2, link: '/employee/reports' },
   { name: 'Profile', icon: User, link: '/employee/profile' },
   { name: 'Logout', icon: LogOut, link: '/logout' } // handled separately
